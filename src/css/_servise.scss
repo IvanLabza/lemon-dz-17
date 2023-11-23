@@ -1,0 +1,78 @@
+.servise {
+  padding: 96px 0;
+  background-color: $bg-2;
+  .container {
+    .servise-title {
+      color: $logo-color;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 64px;
+      margin-bottom: 24px;
+      span {
+        color: $logo-sub-color;
+      }
+    }
+    .servise-text {
+      max-width: 467px;
+      color: $color-text;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      margin-bottom: 56px;
+    }
+    .servise__list {
+      display: flex;
+      gap: 30px;
+      @include tel-min{
+        gap: 10px;
+      }
+      .servise__list-item {
+        max-width: 350px;
+        padding: 32px;
+        background-color: $bg-1;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @include tab {
+          max-width: 300px;
+        }
+
+        @include tel {
+          max-width: 270px;
+        }
+
+        .servise__list-svg {
+        }
+        .servise__list-title {
+          color: $logo-color;
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 41px;
+          margin-bottom: 16px;
+          @include tab {
+            font-size: 32px;
+          }
+
+          @include tel {
+             font-size: 24px;
+          }
+        }
+        .servise__list-text {
+          color: $color-text;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          @include tab {
+            font-size: 14px;
+          }
+
+          @include tel {
+             font-size: 12.5px;
+          }
+        }
+      }
+    }
+  }
+}

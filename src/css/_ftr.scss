@@ -1,0 +1,139 @@
+.ftr {
+  padding: 96px 0;
+  background-color: $bg-1;
+  text-align: center;
+  .container {
+    .ftr-title {
+      color: $logo-color;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 64px;
+      margin-bottom: 24px;
+      span {
+        color: $logo-sub-color;
+      }
+    }
+    .ftr-text {
+      color: #9ca3af;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      max-width: 685px;
+      margin: 0 auto;
+      margin-bottom: 56px;
+    }
+    .ftr__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      justify-content: space-between;
+      margin-bottom: 152px;
+      @include tab {
+        flex-direction: column;
+      }
+      .ftr__address {
+        max-width: 347px;
+        .ftr__list {
+          text-align: left;
+        }
+        .ftr__list-item {
+          a {
+            color: $logo-sub-color;
+            font-family: Lexend Deca;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 41px;
+            span {
+              color: $logo-color;
+            }
+          }
+        }
+      }
+
+      .ftr__form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .ftr__form-input {
+          @include tab {
+            width: 280px;
+          }
+          width: 340px;
+          padding: 11px 0;
+          padding-left: 18px;
+          background-color: $bg-2;
+          border: transparent;
+          color: #f3f4f6;
+          font-family: Lexend Deca;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 41px;
+          ::placeholder {
+            color: #f3f4f6;
+            font-family: Lexend Deca;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 41px;
+          }
+        }
+        .ftr__form-text {
+          @include tab {
+            width: 280px;
+          }
+          width: 540px;
+          resize: none;
+          padding: 11px 0;
+          padding-left: 18px;
+          height: 166px;
+          background-color: $bg-2;
+          border: transparent;
+          color: #f3f4f6;
+          font-family: Lexend Deca;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 41px;
+          ::placeholder {
+            color: #f3f4f6;
+            font-family: Lexend Deca;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 41px;
+          }
+        }
+        .ftr-btn {
+          display: inline-block;
+          color: #000;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 27px;
+          padding: 16px 20px;
+          max-width: 129px;
+          background-color: $logo-sub-color;
+          border-color: transparent;
+          border-radius: 4px;
+        }
+      }
+    }
+    .ftr-subtitle {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .ftr__svg {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .ftr__svg-item {
+      svg {
+        fill: $bg-2;
+      }
+    }
+  }
+}
