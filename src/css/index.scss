@@ -1,21 +1,11 @@
-$logo-sub-color: #eab308;
-
-$logo-color: #f3f4f6;
-
-$color-text: #6b7280;
-
-$bg-1: #020617;
-
-$bg-2: #111827;
-
-$btn-color: #000;
+$Paragraph: #262626;
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .container {
-  max-width: 1092px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -63,12 +53,3 @@ html {
 
 @import 'hero';
 
-@import 'about';
-
-@import 'portfoli';
-
-@import 'ftr';
-
-@import 'work';
-
-@import 'servise';

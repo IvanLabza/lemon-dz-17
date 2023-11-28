@@ -1,56 +1,77 @@
 .head {
-  padding: 16px 0;
-  background-color: $bg-1;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
+  padding: 50px 0;
   .container {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  &-logo {
+    color: $Paragraph;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .head__menu {
+    display: none;
+    @include tab {
+      display: block;
+    }
+    .btn-open {
+    }
+  }
+
+  .head-wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    .head-logo {
-      color: $logo-color;
-      font-size: 24px;
-      font-weight: 700;
-      span {
-        color: $logo-sub-color;
-      }
+    align-items: center;
+    gap: 118px;
+    @include tab {
+      flex-direction: column;
+      padding: 24px;
+      gap: 32px;
+      align-items: start;
+      overflow: scroll;
+      justify-content: unset;
     }
-
-    .head__menu {
-      display: none;
+    .btn-close {
+    }
+    .head__list {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
       @include tab {
-        display: block;
+        flex-direction: column;
+      }
+      &-item {
+        a {
+          color: #000;
+          font-size: 16px;
+          font-weight: 400;
+        }
       }
     }
-    .menu-container {
-      .mobile-wrapper {
-        @include tab {
-          min-width: 978px;
-          padding: 24px;
-        }
-      }
 
-      .head__list {
-        display: flex;
-        gap: 27px;
+    .head__form {
+      display: flex;
+      &-input {
         @include tab {
-          flex-direction: column;
-          padding: 24px;
+          width: 100%;
         }
-        .head__list-item {
-          .head-link {
-            color: #9ca3af;
-            font-size: 16px;
-            font-weight: 400;
-            text-transform: uppercase;
-            &:is(:active , :hover) {
-              color: #fff;
-              font-size: 16px;
-              font-weight: 400;
-              text-transform: uppercase;
-            }
-          }
+        border: transparent;
+        width: 278px;
+        border-radius: 50px;
+        background: #000;
+        outline: transparent;
+        padding: 13px 0 13px 18px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        ::placeholder {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
         }
       }
     }

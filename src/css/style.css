@@ -2,36 +2,3 @@
 @import url(./index.css);
 @import url(./mobile-menu.css);
 
-.servise-swiper {
-  overflow: hidden;
-}
-
-
-
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  margin-top: 40px;
-}
-
-.swiper-pagination-bullet {
-  width: 13px;
-  height: 13px;
-
-  background: rgba(17, 17, 17, 0.1);
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 28px;
-  height: 13px;
-
-  border-radius: 10px;
-
-  background: #fd9222;
-}
-
-.slider-pagination {
-  display: flex;
-  justify-content: center;
-}
