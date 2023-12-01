@@ -1,0 +1,92 @@
+.servise {
+  text-align: center;
+  padding: 111px 0;
+  .container {
+  }
+  &-title {
+    color: #262626;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+  &-text {
+    display: block;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 837px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    margin-top: 121px;
+    gap: 30px;
+
+    @include tab-min {
+      flex-direction: column;
+      align-items: center;
+    }
+    :hover {
+      background-color: #8842f0;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      margin-top: 18px;
+
+      .servise__wrapper-svg {
+        fill: #8842f0;
+         transition: fill 0.3s ease;
+      }
+    }
+    &-item {
+      display: block;
+      padding: 46px 26px 81px 26px;
+      max-width: 370px;
+      border-radius: 15px;
+      background-color: #f9f1fe;
+      color: var(--Paragraph, #262626);
+      color: var(--Paragraph, #262626);
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #8842f0;
+
+        .servise__list-title,
+        .servise__list-text,
+        .servise__list-link,
+        .servise__wrapper-svg {
+          color: #fff; // изменение цвета текста на белый при ховере
+          fill: #fff; // изменение цвета иконок на белый при ховере
+        }
+      }
+    }
+
+    // &-svg {
+    //
+    // }
+    &-title {
+      color: var(--Paragraph, #262626);
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    &-text {
+      color: var(--Text, #575757);
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 18px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    &-link {
+      color: #8842f0;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration-line: underline;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+  }
+}

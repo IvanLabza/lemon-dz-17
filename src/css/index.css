@@ -129,6 +129,11 @@ img {
   font-size: 16px;
   font-weight: 400;
 }
+@media screen and (max-width: 980px) {
+  .head .head-wrapper .head__list-item a {
+    color: #fff;
+  }
+}
 .head .head-wrapper .head__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,4 +179,107 @@ img {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
+}
+
+.servise {
+  text-align: center;
+  padding: 111px 0;
+}
+.servise-title {
+  color: #262626;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.servise-text {
+  display: block;
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 837px;
+  margin: 0 auto;
+}
+.servise__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 121px;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .servise__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.servise__list :hover {
+  background-color: #8842f0;
+}
+.servise__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+  margin-top: 18px;
+}
+.servise__list-wrapper .servise__wrapper-svg {
+  fill: #8842f0;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+.servise__list-item {
+  display: block;
+  padding: 46px 26px 81px 26px;
+  max-width: 370px;
+  border-radius: 15px;
+  background-color: #f9f1fe;
+  color: var(--Paragraph, #262626);
+  color: var(--Paragraph, #262626);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.servise__list-item:hover {
+  background-color: #8842f0;
+}
+.servise__list-item:hover .servise__list-title,
+.servise__list-item:hover .servise__list-text,
+.servise__list-item:hover .servise__list-link,
+.servise__list-item:hover .servise__wrapper-svg {
+  color: #fff;
+  fill: #fff;
+}
+.servise__list-title {
+  color: var(--Paragraph, #262626);
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.servise__list-text {
+  color: var(--Text, #575757);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 18px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.servise__list-link {
+  color: #8842f0;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }

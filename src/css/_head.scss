@@ -49,6 +49,9 @@
           color: #000;
           font-size: 16px;
           font-weight: 400;
+          @include tab {
+            color: #fff;
+          }
         }
       }
     }

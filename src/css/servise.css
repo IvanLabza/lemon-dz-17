@@ -1,0 +1,40 @@
+.servise {
+  text-align: center;
+  padding: 111px 0;
+}
+.servise-title {
+  color: #262626;
+  font-size: 48px;
+  font-weight: 700;
+}
+.servise-text {
+  display: block;
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 837px;
+  margin: 0 auto;
+}
+.servise__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.servise__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+.servise__list-wrapper .servise__list-svg {
+  width: 24px;
+  height: 24px;
+}
+.servise__list-item {
+  max-width: 370px;
+  border-radius: 15px;
+  background: #8842f0;
+}
