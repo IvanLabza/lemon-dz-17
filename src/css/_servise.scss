@@ -58,15 +58,13 @@
         .servise__list-text,
         .servise__list-link,
         .servise__wrapper-svg {
-          color: #fff; // изменение цвета текста на белый при ховере
-          fill: #fff; // изменение цвета иконок на белый при ховере
+          color: #fff; 
+          fill: #fff; 
         }
       }
     }
 
-    // &-svg {
-    //
-    // }
+
     &-title {
       color: var(--Paragraph, #262626);
       font-size: 24px;
