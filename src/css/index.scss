@@ -16,12 +16,18 @@ $maxWidth: 1092px;
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
   font-size: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+    #{$mobSize + 1px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
   );
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@mixin desc {
+  @media screen and (min-width: 980px) {
+    @content;
+  }
 }
 
 @mixin tab {
@@ -54,3 +60,9 @@ html {
 @import 'hero';
 
 @import 'servise';
+
+@import 'doctor';
+
+@import 'form';
+
+@import 'ftr';

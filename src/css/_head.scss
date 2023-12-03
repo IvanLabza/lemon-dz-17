@@ -22,6 +22,15 @@
     }
   }
 
+  .wrapper{
+    position: relative;
+    svg{
+      position: absolute;
+      top: 9px;
+      right: 13px;
+    }
+  }
+
   .head-wrapper {
     display: flex;
     justify-content: space-between;
